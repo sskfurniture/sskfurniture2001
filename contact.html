@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Sri Sai Kishore Furniture</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@preline/preline@2.0.0/dist/preline.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        },
+                        secondary: {
+                            50: '#f8fafc',
+                            100: '#f1f5f9',
+                            200: '#e2e8f0',
+                            300: '#cbd5e1',
+                            400: '#94a3b8',
+                            500: '#64748b',
+                            600: '#475569',
+                            700: '#334155',
+                            800: '#1e293b',
+                            900: '#0f172a',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .contact-input {
+            transition: all 0.3s ease;
+        }
+        .contact-input:focus {
+            border-color: #6b46c1;
+            box-shadow: 0 0 0 2px rgba(107, 70, 193, 0.2);
+        }
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        #map-placeholder {
+            background-image: url('https://www.google.com/maps/place/Sri+Sai+Kishore+Furniture/@17.4813883,78.5335539,17z/data=!3m1!4b1!4m6!3m5!1s0x3bcb9b0905a9fa69:0xb8ccbe6c4b7a76c7!8m2!3d17.4813883!4d78.5361288!16s%2Fg%2F11b66l1c2r?hl=en&authuser=0&entry=ttu&g_ep=EgoyMDI1MDUwNy4wIKXMDSoASAFQAw%3D%3D');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+    <!-- Navigation -->
+    <nav class="bg-white dark:bg-gray-800 shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <img src="logo.png" alt="logo" style="height: 50px; verticl-align: middle; padding-right: 10px"></img>
+                        <span class="text-xl font-bold text-gray-900 dark:text-white">Sri Sai Kishore Furniture</span>
+                    </div>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+                    <a href="index.html" class="text-gray-500 dark:text-gray-300 hover:text-gray-700 dark:hover:text-gray-100 px-3 py-2 text-sm font-medium">Home</a>
+                    <a href="about.html" class="text-gray-500 dark:text-gray-300 hover:text-gray-700 dark:hover:text-gray-100 px-3 py-2 text-sm font-medium">About</a>
+                    <a href="services.html" class="text-gray-500 dark:text-gray-300 hover:text-gray-700 dark:hover:text-gray-100 px-3 py-2 text-sm font-medium">Services</a>
+                    <a href="gallery.html" class="text-gray-500 dark:text-gray-300 hover:text-gray-700 dark:hover:text-gray-100 px-3 py-2 text-sm font-medium">Gallery</a>
+                    <a href="contact.html" class="text-primary-600 dark:text-primary-400 px-3 py-2 text-sm font-medium border-b-2 border-primary-600">Contact</a>
+                </div>
+                <div class="flex items-center md:hidden">
+                    <button type="button" class="hs-collapse-toggle p-2 inline-flex items-center justify-center rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500" data-hs-collapse="#mobile-menu" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <i class="fas fa-bars h-6 w-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div class="hs-collapse hidden md:hidden" id="mobile-menu">
+            <div class="pt-2 pb-3 space-y-1">
+                <a href="index.html" class="text-gray-500 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-gray-700 dark:hover:text-gray-100 block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="about.html" class="text-gray-500 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-gray-700 dark:hover:text-gray-100 block px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="services.html" class="text-gray-500 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-gray-700 dark:hover:text-gray-100 block px-3 py-2 rounded-md text-base font-medium">Services</a>
+                <a href="gallery.html" class="text-gray-500 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-gray-700 dark:hover:text-gray-100 block px-3 py-2 rounded-md text-base font-medium">Gallery</a>
+                <a href="contact.html" class="bg-primary-50 dark:bg-gray-700 text-primary-600 dark:text-primary-400 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+  <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <h1 class="text-3xl font-bold text-center text-gray-800 mb-12">Get In Touch With Us</h1>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <!-- Contact Form Section -->
+            <div class="bg-white rounded-xl shadow-lg p-8">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-6">Send Us a Message</h2>
+                <form class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                        <input type="text" id="name" name="name" 
+                               class="contact-input w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                        <input type="email" id="email" name="email" 
+                               class="contact-input w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                    </div>
+                    <div>
+                        <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" 
+                               class="contact-input w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Your Message</label>
+                        <textarea id="message" name="message" rows="4" 
+                                  class="contact-input w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"></textarea>
+                    </div>
+                    <button type="submit" 
+                            class="w-full bg-purple-600 text-white py-3 px-4 rounded-lg font-medium hover:bg-purple-700 transition duration-300">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+
+            <!-- Contact Information Section -->
+            <div class="space-y-8">
+                <!-- Contact Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="contact-card bg-white p-6 rounded-xl shadow-md transition duration-300">
+                        <div class="flex items-center mb-3">
+                            <div class="bg-purple-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-map-marker-alt text-purple-600"></i>
+                            </div>
+                            <h3 class="font-semibold text-gray-800">Our Address</h3>
+                        </div>
+                        <p class="text-gray-600 pl-14">Road No.1, Sri colony, Neredmet x road, Hyderabad - 500056</p>
+                    </div>
+                    <div class="contact-card bg-white p-6 rounded-xl shadow-md transition duration-300">
+                        <div class="flex items-center mb-3">
+                            <div class="bg-purple-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-phone-alt text-purple-600"></i>
+                            </div>
+                            <h3 class="font-semibold text-gray-800">Phone Number</h3>
+                        </div>
+                        <p class="text-gray-600 pl-14">+91 9866721515</p>
+                    </div>
+                    <div class="contact-card bg-white p-6 rounded-xl shadow-md transition duration-300">
+                        <div class="flex items-center mb-3">
+                            <div class="bg-purple-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-envelope text-purple-600"></i>
+                            </div>
+                            <h3 class="font-semibold text-gray-800">Email Address</h3>
+                        </div>
+                        <p class="text-gray-600 pl-14">sskfurniture2001@gmail.com</p>
+                    </div>
+                    <div class="contact-card bg-white p-6 rounded-xl shadow-md transition duration-300">
+                        <div class="flex items-center mb-3">
+                            <div class="bg-purple-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-clock text-purple-600"></i>
+                            </div>
+                            <h3 class="font-semibold text-gray-800">Store Hours</h3>
+                        </div>
+                        <p class="text-gray-600 pl-14">
+                            Mon-Sun: 10:30 AM - 9:00 PM
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Map Placeholder -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div id="map-placeholder" class="h-64 w-full flex items-center justify-center bg-gray-200">
+                        <div class="text-center p-4">
+                            <i class="fas fa-map-marked-alt text-4xl text-gray-400 mb-2"></i>
+                            <p class="text-gray-500">Google Maps will be displayed here</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+  <!-- Footer -->
+    <footer class="bg-gray-800 dark:bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">Quick Links</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="index.html" class="text-base text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="about.html" class="text-base text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="services.html" class="text-base text-gray-400 hover:text-white">Services</a></li>
+                        <li><a href="gallery.html" class="text-base text-gray-400 hover:text-white">Gallery</a></li>
+                        <li><a href="contact.html" class="text-base text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">Products</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="#" class="text-base text-gray-400 hover:text-white">Sofas</a></li>
+                        <li><a href="#" class="text-base text-gray-400 hover:text-white">Beds</a></li>
+                        <li><a href="#" class="text-base text-gray-400 hover:text-white">Dining Tables</a></li>
+                        <li><a href="#" class="text-base text-gray-400 hover:text-white">Wardrobes</a></li>
+                        <li><a href="#" class="text-base text-gray-400 hover:text-white">Office Furniture</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">Contact Us</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-2 text-primary-400"></i>
+                            <span class="text-base text-gray-400">Road no.1, sri colony, neredmet x roads, Hyderabad - 500056</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-2 text-primary-400"></i>
+                            <span class="text-base text-gray-400">+91 98667 21515</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2 text-primary-400"></i>
+                            <span class="text-base text-gray-400">sskfurniture2001@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">Business Hours</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li class="text-base text-gray-400">Monday - Sunday: 10:30AM - 9PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-base text-gray-400 text-center md:text-left">
+                    &copy; 2025 Sri Sai Kishore Furniture. All rights reserved.
+                </p>
+                <div class="mt-4 md:mt-0 flex space-x-6">
+                    <a href="https://www.facebook.com/share/1AT5iv6Dqr/" target="_blank" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/srisaikishorefurniture?utm_source=qr&igsh=MTA4dHVreWhvbHg0Zw==" target="_blank" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/9866721515" target="_blank" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple animation for elements
+        document.addEventListener('DOMContentLoaded', function() {
+            const animateElements = document.querySelectorAll('.animate-fade-in');
+            
+            animateElements.forEach((el, index) => {
+                setTimeout(() => {
+                    el.classList.add('opacity-100', 'translate-y-0');
+                }, index * 100);
+            });
+        });
+    </script>
+</body>
+</html>
