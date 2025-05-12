@@ -92,6 +92,15 @@
         </div>
         
         <!-- Mobile menu -->
+        <button id="menu-toggle" class="md:hidden p-2 text-gray-700 dark:text-white">
+  <!-- Hamburger icon -->
+  <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+       viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path stroke-linecap="round" stroke-linejoin="round"
+          d="M4 6h16M4 12h16M4 18h16"></path>
+  </svg>
+</button>
+
         <div class="hs-collapse hidden md:hidden" id="mobile-menu">
             <div class="pt-2 pb-3 space-y-1">
                 <a href="index.html" class="bg-primary-50 dark:bg-gray-700 text-primary-600 dark:text-primary-400 block px-3 py-2 rounded-md text-base font-medium">Home</a>
@@ -275,5 +284,14 @@
             });
         });
     </script>
+    <script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuToggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+
 </body>
 </html>
