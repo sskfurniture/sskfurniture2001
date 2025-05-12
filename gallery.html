@@ -225,7 +225,18 @@
         </div>
     </footer>
 
-    
+    <script>
+        // Simple animation for elements
+        document.addEventListener('DOMContentLoaded', function() {
+            const animateElements = document.querySelectorAll('.animate-fade-in');
+            
+            animateElements.forEach((el, index) => {
+                setTimeout(() => {
+                    el.classList.add('opacity-100', 'translate-y-0');
+                }, index * 100);
+            });
+        });
+    </script>  
 </body>
 </html>
                 
