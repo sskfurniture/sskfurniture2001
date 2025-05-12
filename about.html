@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Sri Sai Kishore Furniture | Quality Furniture Since 2008</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@preline/preline@2.0.0/dist/preline.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        },
+                        secondary: {
+                            50: '#f8fafc',
+                            100: '#f1f5f9',
+                            200: '#e2e8f0',
+                            300: '#cbd5e1',
+                            400: '#94a3b8',
+                            500: '#64748b',
+                            600: '#475569',
+                            700: '#334155',
+                            800: '#1e293b',
+                            900: '#0f172a',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .about-hero {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1600585152220-90363fe7e115?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .team-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+    <!-- Navigation -->
+    <nav class="bg-white dark:bg-gray-800 shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <img src="logo.png" alt="logo" style="height: 50px; verticl-align: middle; padding-right: 10px"></img>
+                        <span class="text-xl font-bold text-gray-900 dark:text-white">Sri Sai Kishore Furniture</span>
+                    </div>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+                    <a href="index.html" class="text-gray-500 dark:text-gray-300 hover:text-gray-700 dark:hover:text-gray-100 px-3 py-2 text-sm font-medium">Home</a>
+                    <a href="#" class="text-primary-600 dark:text-primary-400 px-3 py-2 text-sm font-medium border-b-2 border-primary-600">About</a>
+                    <a href="#" class="text-gray-500 dark:text-gray-300 hover:text-gray-700 dark:hover:text-gray-100 px-3 py-2 text-sm font-medium">Services</a>
+                    <a href="#" class="text-gray-500 dark:text-gray-300 hover:text-gray-700 dark:hover:text-gray-100 px-3 py-2 text-sm font-medium">Gallery</a>
+                    <a href="#" class="text-gray-500 dark:text-gray-300 hover:text-gray-700 dark:hover:text-gray-100 px-3 py-2 text-sm font-medium">Contact</a>
+                </div>
+                <div class="flex items-center md:hidden">
+                    <button type="button" class="hs-collapse-toggle p-2 inline-flex items-center justify-center rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500" data-hs-collapse="#mobile-menu" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <i class="fas fa-bars h-6 w-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div class="hs-collapse hidden md:hidden" id="mobile-menu">
+            <div class="pt-2 pb-3 space-y-1">
+                <a href="index.html" class="text-gray-500 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-gray-700 dark:hover:text-gray-100 block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="#" class="bg-primary-50 dark:bg-gray-700 text-primary-600 dark:text-primary-400 block px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="#" class="text-gray-500 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-gray-700 dark:hover:text-gray-100 block px-3 py-2 rounded-md text-base font-medium">Services</a>
+                <a href="#" class="text-gray-500 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-gray-700 dark:hover:text-gray-100 block px-3 py-2 rounded-md text-base font-medium">Gallery</a>
+                <a href="#" class="text-gray-500 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-gray-700 dark:hover:text-gray-100 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="about-hero relative h-96 flex items-center justify-center text-center text-white">
+        <div class="px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 animate-fade-in">Our Story</h1>
+            <p class="text-xl md:text-2xl mb-8 animate-fade-in delay-100">Crafting quality furniture for our community since 2001</p>
+        </div>
+    </div>
+
+    <!-- Our Story Section -->
+    <div class="py-12 bg-white dark:bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+                <div class="mb-8 lg:mb-0">
+                    <h2 class="text-3xl font-extrabold text-gray-900 dark:text-white sm:text-4xl">About Us</h2>
+                    <div class="mt-6 text-gray-500 dark:text-gray-300 space-y-4">
+                        <p>
+                            Sri Sai Kishore Furniture is a trusted name in quality home and office furniture in Neredmet, Hyderabad. With a strong commitment to craftsmanship, durability, and customer satisfaction, we offer a wide range of furniture from stylish sofas and dining sets to modular wardrobes and office essentials, all at affordable prices.
+                        </p>
+                        <p>
+                            Established with the goal of bringing comfort and elegance into every home, we take pride in our personalized service, transparent pricing, and timely delivery. Whether you're furnishing a new home or upgrading your workspace, Sri Sai Kishore Furniture is your one-stop destination for reliable, long-lasting furniture solutions.
+                        </p>
+                        <p>
+                            Visit us today and experience furniture that fits your style and budget—without compromise.
+                        </p>
+                    </div>
+                </div>
+                <div class="relative rounded-lg overflow-hidden shadow-xl">
+                    <img src="store.png" alt="Our store" class="w-full h-auto object-cover">
+                    <div class="absolute inset-0 bg-primary-600 opacity-20"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Our Specialties -->
+    <div class="py-12 bg-gray-50 dark:bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-extrabold text-gray-900 dark:text-white sm:text-4xl">Our Specialties</h2>
+                <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 dark:text-gray-300 sm:mt-4">
+                    What sets our furniture apart
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+                    <div class="flex items-center justify-center h-12 w-12 rounded-md bg-primary-500 text-white mb-4">
+                        <i class="fas fa-rupee text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 dark:text-white mb-2">Affordable Pricing & Service</h3>
+                    <p class="text-gray-500 dark:text-gray-300">
+                        Great furniture doesn't have to be expensive. We provide competitive prices, honest service, and hassle-free delivery across Hyderabad.
+                    </p>
+                </div>
+
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+                    <div class="flex items-center justify-center h-12 w-12 rounded-md bg-primary-500 text-white mb-4">
+                        <i class="fas fa-hands-helping text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 dark:text-white mb-2">Customized Furniture Solutions</h3>
+                    <p class="text-gray-500 dark:text-gray-300">
+                        We understand every home is unique. That's why we offer custom designs tailored to your space, style, and budget without compromising on quality.
+                    </p>
+                </div>
+
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+                    <div class="flex items-center justify-center h-12 w-12 rounded-md bg-primary-500 text-white mb-4">
+                        <i class="fas fa-award text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 dark:text-white mb-2">Quality & Durability</h3>
+                    <p class="text-gray-500 dark:text-gray-300">
+                        We use only premium materials to ensure our furniture not only looks good but lasts for years. Every piece is built with strength, comfort, an reliability in mind.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    <!-- Our Mission -->
+    <div class="bg-primary-700 dark:bg-primary-800">
+        <div class="max-w-4xl mx-auto py-16 px-4 sm:py-20 sm:px-6 lg:px-8 text-center">
+            <i class="fas fa-bullseye text-5xl text-white mb-6"></i>
+            <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
+                Our Mission
+            </h2>
+            <p class="mt-6 text-xl leading-8 text-primary-100">
+                "To create beautiful, functional furniture that enhances our customers' homes while preserving traditional craftsmanship techniques. We're committed to using sustainable materials, supporting local artisans, and providing exceptional value to our community."
+            </p>
+            <p class="mt-8 text-lg font-medium text-white">
+                - Laxman, Founder
+            </p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 dark:bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">Quick Links</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="index.html" class="text-base text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="#" class="text-base text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="#" class="text-base text-gray-400 hover:text-white">Services</a></li>
+                        <li><a href="#" class="text-base text-gray-400 hover:text-white">Gallery</a></li>
+                        <li><a href="#" class="text-base text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
