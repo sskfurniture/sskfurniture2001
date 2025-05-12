@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Sai Kishore Furniture - Quality Furniture for Your Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@preline/preline@2.0.0/dist/preline.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        },
+                        secondary: {
+                            50: '#f8fafc',
+                            100: '#f1f5f9',
+                            200: '#e2e8f0',
+                            300: '#cbd5e1',
+                            400: '#94a3b8',
+                            500: '#64748b',
+                            600: '#475569',
+                            700: '#334155',
+                            800: '#1e293b',
+                            900: '#0f172a',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .hero-image {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .furniture-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+    <!-- Navigation -->
+    <nav class="bg-white dark:bg-gray-800 shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <img src="logo.png" alt="logo" style="height: 50px; verticl-align: middle; padding-right: 10px"></img>
+                        <span class="text-xl font-bold text-gray-900 dark:text-white">Sri Sai Kishore Furniture</span>
+                    </div>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+                    <a href="#" class="text-primary-600 dark:text-primary-400 px-3 py-2 text-sm font-medium border-b-2 border-primary-600">Home</a>
+                    <a href="#" class="text-gray-500 dark:text-gray-300 hover:text-gray-700 dark:hover:text-gray-100 px-3 py-2 text-sm font-medium">About</a>
+                    <a href="#" class="text-gray-500 dark:text-gray-300 hover:text-gray-700 dark:hover:text-gray-100 px-3 py-2 text-sm font-medium">Services</a>
+                    <a href="#" class="text-gray-500 dark:text-gray-300 hover:text-gray-700 dark:hover:text-gray-100 px-3 py-2 text-sm font-medium">Gallery</a>
+                    <a href="#" class="text-gray-500 dark:text-gray-300 hover:text-gray-700 dark:hover:text-gray-100 px-3 py-2 text-sm font-medium">Contact</a>
+                </div>
+                <div class="flex items-center md:hidden">
+                    <button type="button" class="hs-collapse-toggle p-2 inline-flex items-center justify-center rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500" data-hs-collapse="#mobile-menu" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <i class="fas fa-bars h-6 w-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div class="hs-collapse hidden md:hidden" id="mobile-menu">
+            <div class="pt-2 pb-3 space-y-1">
+                <a href="#" class="bg-primary-50 dark:bg-gray-700 text-primary-600 dark:text-primary-400 block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="#" class="text-gray-500 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-gray-700 dark:hover:text-gray-100 block px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="#" class="text-gray-500 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-gray-700 dark:hover:text-gray-100 block px-3 py-2 rounded-md text-base font-medium">Services</a>
+                <a href="#" class="text-gray-500 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-gray-700 dark:hover:text-gray-100 block px-3 py-2 rounded-md text-base font-medium">Gallery</a>
+                <a href="#" class="text-gray-500 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-gray-700 dark:hover:text-gray-100 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-image relative h-96 md:h-screen max-h-[600px] flex items-center justify-center text-center text-white">
+        <div class="px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 animate-fade-in">Crafting Comfort for Your Home</h1>
+            <p class="text-xl md:text-2xl mb-8 animate-fade-in delay-100">Premium quality furniture designed to bring elegance and functionality to your living spaces</p>
+            <a href="#contact" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 transition-all duration-300 animate-fade-in delay-200">
+                Visit Our Store
+                <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Welcome Section -->
+    <div class="py-12 bg-white dark:bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+                <h2 class="text-base text-primary-600 dark:text-primary-400 font-semibold tracking-wide uppercase">Welcome to</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-4xl">Sri Sai Kishore Furniture</p>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 dark:text-gray-300 lg:mx-auto">
+                    For over 25 years, we've been crafting high-quality furniture that combines timeless design with exceptional comfort. Our locally-made pieces are built to last and designed to enhance your living experience.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Furniture Categories -->
+    <div class="py-12 bg-gray-50 dark:bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-extrabold text-gray-900 dark:text-white sm:text-4xl">Our Furniture Collection</h2>
+                <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 dark:text-gray-300 sm:mt-4">
+                    Explore our wide range of furniture pieces
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                <div class="furniture-card bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transition-all duration-300">
+                    <div class="h-48 bg-gray-200 dark:bg-gray-700 flex items-center justify-center">
+                        <img src="livingroom.png" alt="livingroom"></img>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Living Room Furniture</h3>
+                        <p class="text-gray-500 dark:text-gray-300">
+                            Elegant sofas, coffee tables, and entertainment units to create a welcoming living space.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="furniture-card bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transition-all duration-300">
+                    <div class="h-48 bg-gray-200 dark:bg-gray-700 flex items-center justify-center">
+                        <img src="bedroom.png" alt="bedroom"></img>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Bedroom Furniture</h3>
+                        <p class="text-gray-500 dark:text-gray-300">
+                            Comfortable beds, wardrobes, and nightstands for your perfect night's sleep.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="furniture-card bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transition-all duration-300">
+                    <div class="h-48 bg-gray-200 dark:bg-gray-700 flex items-center justify-center">
+                        <img src="dining.png" alt="dining" ></img>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Dining Room Sets</h3>
+                        <p class="text-gray-500 dark:text-gray-300">
+                            Beautiful dining tables and chairs for memorable family meals and gatherings.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="bg-primary-700 dark:bg-primary-800">
+        <div class="max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
+                <span class="block">Ready to transform your home?</span>
+                <span class="block">Visit our store today.</span>
+            </h2>
+            <p class="mt-4 text-lg leading-6 text-primary-100">
+                Our expert team will help you find the perfect furniture pieces for your space and style.
+            </p>
+            <a href="#contact" class="mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-primary-600 bg-white hover:bg-primary-50 sm:w-auto transition-all duration-300">
+                Get in Touch
+                <i class="fas fa-phone-alt ml-2"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 dark:bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">Quick Links</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="#" class="text-base text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="#" class="text-base text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="#" class="text-base text-gray-400 hover:text-white">Services</a></li>
+                        <li><a href="#" class="text-base text-gray-400 hover:text-white">Gallery</a></li>
+                        <li><a href="#" class="text-base text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">Products</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="#" class="text-base text-gray-400 hover:text-white">Sofas</a></li>
+                        <li><a href="#" class="text-base text-gray-400 hover:text-white">Beds</a></li>
+                        <li><a href="#" class="text-base text-gray-400 hover:text-white">Dining Tables</a></li>
+                        <li><a href="#" class="text-base text-gray-400 hover:text-white">Wardrobes</a></li>
+                        <li><a href="#" class="text-base text-gray-400 hover:text-white">Office Furniture</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">Contact Us</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-2 text-primary-400"></i>
+                            <span class="text-base text-gray-400">Road no.1, sri colony, neredmet x roads, Hyderabad - 500056</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-2 text-primary-400"></i>
+                            <span class="text-base text-gray-400">+91 98667 21515</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2 text-primary-400"></i>
+                            <span class="text-base text-gray-400">sskfurniture2001@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">Business Hours</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li class="text-base text-gray-400">Monday - Sunday: 10:30AM - 9PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-base text-gray-400 text-center md:text-left">
+                    &copy; 2025 Sri Sai Kishore Furniture. All rights reserved.
+                </p>
+                <div class="mt-4 md:mt-0 flex space-x-6">
+                    <a href="https://www.facebook.com/share/1AT5iv6Dqr/" target="_blank" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/srisaikishorefurniture?utm_source=qr&igsh=MTA4dHVreWhvbHg0Zw==" target="_blank" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/9866721515" target="_blank" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple animation for elements
+        document.addEventListener('DOMContentLoaded', function() {
+            const animateElements = document.querySelectorAll('.animate-fade-in');
+            
+            animateElements.forEach((el, index) => {
+                setTimeout(() => {
+                    el.classList.add('opacity-100', 'translate-y-0');
+                }, index * 100);
+            });
+        });
+    </script>
+</body>
+</html>
